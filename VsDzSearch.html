@@ -1,0 +1,189 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Моя стартовая страница</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: white;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        .weather {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            text-align: right;
+        }
+
+            .weather .temp {
+                font-size: 24px;
+                font-weight: bold;
+                color: black;
+            }
+
+            .weather .city {
+                font-size: 14px;
+                color: #5b62f4;
+                font-weight: bold;
+            }
+
+        .center-block {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .time {
+            font-size: 55px;
+            font-weight: bold;
+            color: black;
+            margin-bottom: 5px;
+        }
+
+        .greeting {
+            font-size: 20px;
+            font-weight: bold;
+            color: #5b62f4;
+            margin-bottom: 40px;
+        }
+
+        .search-box {
+            background-color: #f2f2f2;
+            padding: 15px 25px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            width: 300px;
+            margin-bottom: 30px;
+        }
+
+            .search-box svg {
+                width: 20px;
+                height: 20px;
+                margin-right: 10px;
+                fill: gray;
+            }
+
+            .search-box span {
+                color: gray;
+                font-size: 16px;
+            }
+
+        .apps {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+            justify-content: center;
+            max-width: 400px;
+        }
+
+        .icon {
+            width: 50px;
+            height: 50px;
+            background-color: #f2f2f2;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            overflow: hidden;
+        }
+
+
+            .icon img {
+                width: 60%;
+                height: 60%;
+                object-fit: contain;
+            }
+
+        @media (max-width: 400px) {
+            .time {
+                font-size: 40px;
+            }
+
+            .search-box {
+                width: 220px;
+            }
+
+            .icon {
+                width: 45px;
+                height: 45px;
+            }
+
+            .apps {
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="weather">
+        <div class="temp">36°</div>
+        <div class="city">Ahmedabad</div>
+    </div>
+
+    <div class="center-block">
+
+        <div class="time">09:11:01</div>
+        <div class="greeting">Good Morning, Saad.</div>
+
+        <div class="search-box">
+            <svg viewBox="0 0 24 24">
+                <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z" />
+            </svg>
+            <span>Search</span>
+        </div>
+
+        <div class="apps">
+
+
+            <a href="https://www.youtube.com" target="_blank" class="icon" title="YouTube">
+                <img src="https://avatars.mds.yandex.net/i?id=13fd402039b64af299073ce3c3b79c2cbdf82d6b-5177922-images-thumbs&n=13" alt="YouTube">
+            </a>
+
+
+            <a href="https://chat.openai.com" target="_blank" class="icon" title="ChatGPT">
+                <img src="https://avatars.mds.yandex.net/i?id=7237d1f667790a2e93d43c8374270106_l-5658481-images-thumbs&n=13" alt="ChatGPT">
+            </a>
+
+
+            <a href="https://yandex.ru" target="_blank" class="icon" title="Яндекс">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Yandex_icon.svg/3840px-Yandex_icon.svg.png" alt="Яндекс">
+            </a>
+
+
+            <a href="https://www.deepseek.com" target="_blank" class="icon" title="DeepSeek">
+                <img src="https://likevr.ru/wp-content/uploads/2025/01/group-2-1.png" alt="DeepSeek">
+            </a>
+
+
+            <a href="https://github.com" target="_blank" class="icon" title="GitHub">
+                <img src="https://avatars.mds.yandex.net/i?id=f714dcef811b3e43fcedc046f95a629dc5913cee-4900921-images-thumbs&n=13" alt="GitHub">
+            </a>
+
+
+            <a href="https://www.linkedin.com" target="_blank" class="icon" title="LinkedIn">
+                <img src="https://static.vecteezy.com/system/resources/previews/023/986/608/non_2x/linkedin-logo-linkedin-logo-transparent-linkedin-icon-transparent-free-free-png.png" alt="LinkedIn">
+            </a>
+
+
+            <a href="#" class="icon" title="Добавить">
+                <img src="https://i.pinimg.com/originals/8f/fd/38/8ffd38358a69e6630f8466d7063fd1c2.png" alt="Добавить">
+            </a>
+
+        </div>
+    </div>
+
+</body>
+</html>
