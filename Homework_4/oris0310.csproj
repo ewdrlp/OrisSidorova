@@ -1,0 +1,39 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<OutputType>Exe</OutputType>
+		<TargetFramework>net8.0</TargetFramework>
+		<RootNamespace>_1dz</RootNamespace>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<Compile Remove="Settings\**" />
+		<EmbeddedResource Remove="Settings\**" />
+		<None Remove="Settings\**" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Update="static\**\*.*">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="settings.json">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		
+
+		
+	</ItemGroup>
+
+	<ItemGroup>
+		<Compile Update="HttpServer.cs">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Compile>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Folder Include="static\Login Form\" />
+	</ItemGroup>
+
+</Project>
